@@ -58,6 +58,16 @@ li b{font-variant-numeric:tabular-nums}
 .grid{display:grid;gap:14px;margin:14px 0 6px}
 .g2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
 .g4{grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+.design{margin-top:22px;border:1px solid var(--line);border-radius:12px;padding:20px;background:var(--surface)}
+.design .tagline{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.design .ship{font-size:.72rem;font-weight:700;letter-spacing:.08em;padding:3px 9px;border-radius:999px;background:var(--accent);color:var(--bg)}
+.design h4{margin:18px 0 8px;font-size:1rem}
+.bars{display:flex;flex-direction:column;gap:6px}
+.bar{display:grid;grid-template-columns:minmax(120px,170px) 1fr;gap:10px;align-items:center;font-size:.86rem}
+.bar .t{height:22px;border-radius:6px;background:var(--accent-soft);position:relative;overflow:hidden}
+.bar .t i{display:block;height:100%;background:var(--accent);border-radius:6px}
+.bar .t em{position:absolute;right:6px;top:2px;background:var(--surface);padding:0 5px;border-radius:4px;line-height:18px;font-style:normal;font-variant-numeric:tabular-nums;font-size:.8rem}
+@media (max-width:560px){.bar{grid-template-columns:1fr}}
 figure{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px;display:flex;flex-direction:column;gap:6px;min-width:0}
 figure img{display:block;width:100%;height:auto;border-radius:6px}
 figure.tall img{max-height:520px;object-fit:contain;object-position:top}
@@ -131,13 +141,25 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:v
     <h3>Alpha, building the foundations · 12/2025 – 01/2026</h3>
     <ul>
       <li>Designed the go-to-market around two programs that carried through to TGE: <b>Genesis Points</b> (volume-based airdrop points) and a <b>Discord Role system</b> tied to airdrop eligibility (<a href="https://t.me/Bullbit_Ai/1263">roles</a>, <a href="https://t.me/Bullbit_Ai/1301">Genesis</a>)</li>
-      <li>Genesis Points recorded <b>$424,826,391</b> in trading volume by its snapshot on 5 Jun 2026 (<a href="https://x.com/BullbitDEXHQ/status/2062731352047292655">recap</a>)</li>
+      <li>Genesis Points recorded <b>$424,826,391</b> in real user trading volume by its snapshot on 5 Jun 2026 (<a href="https://x.com/BullbitDEXHQ/status/2062731352047292655">recap</a>), at a reward cost of about <b>$94 per $1M volume</b>; ~90% of airdrop recipients kept trading afterwards</li>
       <li>First community campaign with ~3,000 participants (<a href="https://taskon.xyz/quest/275942998">TaskOn</a>), a Christmas event, weekly role-earning events and AMAs on Binance Live and X Spaces (<a href="https://t.me/Bullbit_Ai/1265">post</a>)</li>
       <li>Grew Discord from 0 to <b>7,674 members</b>, organically</li>
     </ul>
     <div class="grid g2">
       <figure><img src="img/bullbit_genesis_recap.jpg" alt="Official Bullbit Genesis Points recap: 424,826,391 dollars total trading volume" loading="lazy"><figcaption>Official recap: $424,826,391 trading volume from the Genesis Points program I designed (<a href="https://x.com/BullbitDEXHQ/status/2062731352047292655">post</a>)</figcaption></figure>
       <figure><img src="img/bullbit_discord_invite.jpg" alt="Bullbit Discord invite showing 7,672 members" loading="lazy"><figcaption>Bullbit Discord: 7,672 members, built from zero</figcaption></figure>
+    </div>
+  </div>
+
+
+  <div class="design" id="genesis-results">
+    <div class="tagline"><span class="ship">SHIPPED</span><h3 style="margin:0">Genesis Points: results and efficiency</h3></div>
+    <p>A volume-based points program that converted into the $BUBI airdrop at TGE, run for about four months from private beta to the snapshot. I designed it with the founding team. Program mechanics are covered by NDA; the outcomes below are what it delivered.</p>
+    <div class="glance">
+      <div class="stat"><b>$424.8M</b><span>trading volume, 100% from real users</span></div>
+      <div class="stat"><b>~$94</b><span>reward cost per $1M volume (1M $BUBI ≈ $40K at the $0.04 listing price), under 1 bps</span></div>
+      <div class="stat"><b>~10,000</b><span>wallets took part; 500 qualified traders received the airdrop</span></div>
+      <div class="stat"><b>~90%</b><span>of airdrop recipients kept trading after the airdrop</span></div>
     </div>
   </div>
 
