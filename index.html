@@ -68,7 +68,16 @@ li b{font-variant-numeric:tabular-nums}
 .bar .t i{display:block;height:100%;background:var(--accent);border-radius:6px}
 .bar .t em{position:absolute;right:6px;top:2px;background:var(--surface);padding:0 5px;border-radius:4px;line-height:18px;font-style:normal;font-variant-numeric:tabular-nums;font-size:.8rem}
 @media (max-width:560px){.bar{grid-template-columns:1fr}}
-.mini{border-collapse:collapse;margin:8px 0 2px;font-size:.85rem;font-variant-numeric:tabular-nums}.mini th,.mini td{border:1px solid var(--line);padding:4px 10px;text-align:left}.mini th{background:var(--surface)}
+.tw{overflow-x:auto;max-width:100%}.mini{border-collapse:collapse;max-width:100%;margin:8px 0 2px;font-size:.85rem;font-variant-numeric:tabular-nums}.mini th,.mini td{border:1px solid var(--line);padding:4px 8px;text-align:left}.mini th{background:var(--surface)}
+.st{display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.09em;padding:3px 8px;border-radius:999px;vertical-align:middle;margin-right:8px;color:#fff;white-space:nowrap}
+.st.ship{background:#15803d}.st.deliv{background:#1d4ed8}.st.built{background:#7c3aed}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .st.ship{background:#16a34a}:root:not([data-theme="light"]) .st.deliv{background:#2563eb}:root:not([data-theme="light"]) .st.built{background:#8b5cf6}}
+.programs{margin-top:28px}.programs h2{margin-bottom:4px}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:10px;margin-top:12px}
+.pcard{display:flex;flex-direction:column;gap:6px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;color:inherit;text-decoration:none;min-width:0}
+.pcard:hover{border-color:var(--accent)}
+.pcard b{font-size:1rem}.pcard small{color:var(--muted);font-size:.84rem;line-height:1.4}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;color:var(--muted);font-size:.84rem;margin-top:6px}
 figure{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px;display:flex;flex-direction:column;gap:6px;min-width:0}
 figure img{display:block;width:100%;height:auto;border-radius:6px}
 figure.tall img{max-height:520px;object-fit:contain;object-position:top}
@@ -128,8 +137,28 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:v
   <div class="stat"><b>Top 5</b><span>The Open Hack 2025 by TON, finals at India Blockchain Week</span><a href="#builder">Telegram Mini App</a></div>
 </div>
 
+<section class="programs" id="programs" aria-label="Programs and campaigns">
+  <h2>Programs &amp; campaigns</h2>
+  <div class="legend"><span><span class="st ship">SHIPPED</span>programs I designed and launched</span><span><span class="st deliv">DELIVERED</span>campaigns I ran for an employer or client</span><span><span class="st built">BUILT</span>products I coded</span></div>
+  <div class="pgrid">
+    <a class="pcard" href="#genesis-results"><span><span class="st ship">SHIPPED</span></span><b>Genesis Points</b><small>Bullbit · $424.8M real user volume, ~$94 per $1M, ~90% kept trading</small></a>
+    <a class="pcard" href="#bullbit-beta"><span><span class="st ship">SHIPPED</span></span><b>Bull Blitz trading competitions</b><small>Bullbit · $61M volume on $2,457 in prizes, ~$40 per $1M</small></a>
+    <a class="pcard" href="#bullbit-alpha"><span><span class="st ship">SHIPPED</span></span><b>Discord Role system</b><small>Bullbit · Discord 0 → 7,674 members, tied to airdrop eligibility</small></a>
+    <a class="pcard" href="#bullbit-tge"><span><span class="st deliv">DELIVERED</span></span><b>$BUBI TGE campaign</b><small>Bullbit · BingX + LBank listing, 950+ media, Korea GTM</small></a>
+    <a class="pcard" href="#bullbit-testnet"><span><span class="st deliv">DELIVERED</span></span><b>Bullchain L1 testnet campaign</b><small>Bullbit · $48.5B volume, 45M transactions, ~$0.11 per wallet</small></a>
+    <a class="pcard" href="#bullbit-mainnet"><span><span class="st deliv">DELIVERED</span></span><b>Bullchain mainnet migration</b><small>Bullbit · Korean KOLs and global PR</small></a>
+    <a class="pcard" href="#c-aetheriumx"><span><span class="st deliv">DELIVERED</span></span><b>AetheriumX growth & $8M round PR</b><small>Scalpel Labs · ~20K X & 20K Telegram, The Block, Odaily, BlockBeats</small></a>
+    <a class="pcard" href="#c-aster"><span><span class="st deliv">DELIVERED</span></span><b>Aster AI X growth</b><small>Scalpel Labs · 50K-follower peak, picked for BNB AI Hack</small></a>
+    <a class="pcard" href="#c-cryplex"><span><span class="st deliv">DELIVERED</span></span><b>Cryplex AI X growth</b><small>Scalpel Labs · 0 → 68.5K followers</small></a>
+    <a class="pcard" href="#c-predictx"><span><span class="st deliv">DELIVERED</span></span><b>PredictX trading campaigns</b><small>Scalpel Labs · 252 verified traders, ~$4 each</small></a>
+    <a class="pcard" href="#synergy"><span><span class="st deliv">DELIVERED</span></span><b>NFT gaming growth & Matr1x KOLs</b><small>Synergy Labs · 2 games at $2M+ NFT sales each, 500+ KOLs</small></a>
+    <a class="pcard" href="#builder"><span><span class="st built">BUILT</span></span><b>Pay-Then-Act AI trading agent</b><small>Coded solo · Top 100, Binance Agent OS Mini Hackathon</small></a>
+    <a class="pcard" href="#builder"><span><span class="st built">BUILT</span></span><b>Telegram Mini App game on TON</b><small>Team of 4 · Top 5, The Open Hack 2025</small></a>
+  </div>
+</section>
+
 <nav class="toc" aria-label="Sections">
-  <a href="#bullbit">Bullbit</a><a href="#scalpel">Scalpel Labs</a><a href="#synergy">Synergy Labs</a><a href="#binance">Binance</a><a href="#sandbox">The Sandbox</a><a href="#builder">Builder &amp; AI</a><a href="#earlier">Communities</a><a href="#coverage">Korean coverage</a>
+  <a href="#programs">Programs</a><a href="#bullbit">Bullbit</a><a href="#scalpel">Scalpel Labs</a><a href="#synergy">Synergy Labs</a><a href="#binance">Binance</a><a href="#sandbox">The Sandbox</a><a href="#builder">Builder &amp; AI</a><a href="#earlier">Communities</a><a href="#coverage">Korean coverage</a>
 </nav>
 
 <section id="bullbit">
@@ -139,7 +168,7 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:v
   <p>I joined Bullbit as an early marketing hire, shortly after it pivoted to a Perp DEX. Working with the founding team, I designed two programs that became key to its growth, Genesis Points and the Discord Role system, and went on to help lead marketing through beta, public launch, the $BUBI TGE and the launch of Bullchain, Bullbit's own Layer 1.</p>
 
   <div class="phase">
-    <h3>Alpha, building the foundations · 12/2025 – 01/2026</h3>
+    <h3 id="bullbit-alpha">Alpha, building the foundations · 12/2025 – 01/2026</h3>
     <ul>
       <li>Designed the go-to-market around two programs that carried through to TGE: <b>Genesis Points</b> (volume-based airdrop points) and a <b>Discord Role system</b> tied to airdrop eligibility (<a href="https://t.me/Bullbit_Ai/1263">roles</a>, <a href="https://t.me/Bullbit_Ai/1301">Genesis</a>)</li>
       <li>Genesis Points recorded <b>$424,826,391</b> in real user trading volume by its snapshot on 5 Jun 2026 (<a href="https://x.com/BullbitDEXHQ/status/2062731352047292655">recap</a>), at a reward cost of about <b>$94 per $1M volume</b>, under 1/5 of the taker fee; ~90% of airdrop recipients kept trading afterwards</li>
@@ -154,7 +183,7 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:v
 
 
   <div class="design" id="genesis-results">
-    <div class="tagline"><span class="ship">SHIPPED</span><h3 style="margin:0">Genesis Points: results and efficiency</h3></div>
+    <div class="tagline"><span class="st ship">SHIPPED</span><h3 style="margin:0">Genesis Points: results and efficiency</h3></div>
     <p>A volume-based points program that converted into the $BUBI airdrop at TGE, run for about four months from private beta to the snapshot. I designed it with the founding team. Program mechanics are covered by NDA; the outcomes below are what it delivered.</p>
     <div class="glance">
       <div class="stat"><b>$424.8M</b><span>trading volume, 100% from real users</span></div>
@@ -165,15 +194,15 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:v
   </div>
 
   <div class="phase">
-    <h3>Beta &amp; public launch · 02/2026 – 04/2026</h3>
+    <h3 id="bullbit-beta">Beta &amp; public launch · 02/2026 – 04/2026</h3>
     <ul>
       <li>Relaunched Bullbit on X as <a href="https://x.com/BullbitDEXHQ">@BullbitDEXHQ</a>: 0 → <b>22.2K followers</b> at peak, organic</li>
       <li>Bull Blitz trading competitions (<a href="https://t.me/Bullbit_Ai/1337">S1</a>, <a href="https://t.me/Bullbit_Ai/1353">S2</a>): <b>$61M volume on $2,457 in prizes</b>, about <b>$40 per $1M volume</b>. Season 2 grew volume 6.8x and traders 2.2x over Season 1, while the cost per $1M volume halved:
-        <table class="mini"><tr><th></th><th>Season 1 · 12–26 Mar</th><th>Season 2 · 9 Apr – 13 May</th></tr>
+        <div class="tw"><table class="mini"><tr><th></th><th>Season 1<br><span style="font-weight:400">12–26 Mar</span></th><th>Season 2<br><span style="font-weight:400">9 Apr – 13 May</span></th></tr>
         <tr><td>Traders</td><td>273</td><td>609</td></tr>
         <tr><td>Volume</td><td>$7.86M</td><td>$53.14M</td></tr>
         <tr><td>Prizes paid</td><td>$565</td><td>$1,892</td></tr>
-        <tr><td>Cost per $1M volume</td><td>~$72</td><td>~$36</td></tr></table></li>
+        <tr><td>Cost per $1M volume</td><td>~$72</td><td>~$36</td></tr></table></div></li>
       <li>Partner co-marketing campaigns with the Dhruv Sniper and Alex Admin communities: <b>3,214 participants</b> (<a href="https://taskon.xyz/quest/982040385">quest 1</a>, <a href="https://taskon.xyz/quest/506599101">quest 2</a>)</li>
     </ul>
     <div class="grid g2">
@@ -184,7 +213,7 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:v
   </div>
 
   <div class="phase">
-    <h3>$BUBI TGE · May – Jul 2026 · ~$80K budget</h3>
+    <h3 id="bullbit-tge"><span class="st deliv">DELIVERED</span>$BUBI TGE · May – Jul 2026 · ~$80K budget</h3>
     <ul>
       <li>3-phase TGE campaign (<a href="https://taskon.xyz/quest/60235145">phase 1</a>, <a href="https://t.me/Bullbit_Ai/1381">phase 2</a>, <a href="https://t.me/Bullbit_Ai/1403">phase 3</a>); <b>$BUBI listed on BingX and LBank</b> on 23 Jun 2026 (<a href="https://x.com/BullbitDEXHQ/status/2069359849310433335">announcement</a>)</li>
       <li>"Bull Genesis: The First Move" TGE quest: <b>4,228 participants</b></li>
@@ -231,7 +260,7 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:v
   </div>
 
   <div class="phase">
-    <h3>Bullchain L1 public testnet · Sep – Oct 2026 · $2.5K campaign budget</h3>
+    <h3 id="bullbit-testnet"><span class="st deliv">DELIVERED</span>Bullchain L1 public testnet · Sep – Oct 2026 · $2.5K campaign budget</h3>
     <ul>
       <li><b>$48.5B</b> cumulative testnet volume in 6 weeks (peak day $8.8B on 8 Oct), <b>45M transactions from ~22,000 wallets</b>, on a $2.5K campaign budget, about <b>$0.11 per wallet</b> (<a href="https://bullbit.ai/blog/en/bullchain-testnet-weekly-recap-week-6">week 6 recap</a>)</li>
       <li>Bug bounties on <a href="https://hackenproof.com/programs/bullbit-qa-testing">HackenProof</a> (85 hackers, 414 submissions) and <a href="https://app.firstdollar.money/company/bullbitdexhq/radar-room/bullbit-2">First Dollar</a> (30 testers, 301 feedback reports)</li>
@@ -257,7 +286,7 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:v
   </div>
 
   <div class="phase">
-    <h3>Bullchain mainnet · Oct – Nov 2026</h3>
+    <h3 id="bullbit-mainnet"><span class="st deliv">DELIVERED</span>Bullchain mainnet · Oct – Nov 2026</h3>
     <ul><li>Mainnet migration campaign with Korean KOLs (<a href="https://t.me/lastmoneyalpha/10891">막돈방</a>, <a href="https://t.me/GemHive/39751">GemHive</a>, <a href="https://t.me/leedogin2/24759">이도진</a>, <a href="https://t.me/chukapikachu/12183">츄카피</a>) and global PR (<a href="https://www.coingabbar.com/en/bullbit-migrates-to-bullchain-its-own-layer-1-for-trading">CoinGabbar</a>, <a href="https://techbullion.com/bullbit-migrates-to-bullchain-its-own-layer-1-for-trading/">TechBullion</a>)</li></ul>
     <figure><img src="img/mainnet_techbullion.jpg" alt="TechBullion: Bullbit migrates to BullChain, its own Layer 1 for trading" loading="lazy"><figcaption><a href="https://techbullion.com/bullbit-migrates-to-bullchain-its-own-layer-1-for-trading/">TechBullion</a>: Bullbit migrates to BullChain, 4 Nov 2026</figcaption></figure>
     <div class="grid g4">
@@ -272,7 +301,7 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:v
   <h2>Scalpel Labs · Web3 growth agency</h2>
   <div class="meta"><span class="chip">Founder &amp; Growth Lead</span><span class="chip">4-person team</span></div>
   <p>A lean agency running community, KOLs, PR and events for clients, everything except development.</p>
-  <h3>AetheriumX (DeFi × GameFi) · agency partner</h3>
+  <h3 id="c-aetheriumx"><span class="st deliv">DELIVERED</span>AetheriumX (DeFi × GameFi) · agency partner</h3>
   <ul>
     <li>Grew <a href="https://x.com/aetheriumX_fun">X</a> to ~20K followers and <a href="https://t.me/AetheriumX_fun">Telegram</a> to 20K members, organically, working alongside the client's in-house offline team</li>
     <li>Built a 70+ member KOL and ambassador program; ran 10+ campaigns; co-developed the whitepaper and core narrative</li>
@@ -299,7 +328,7 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:v
     <a href="https://pitchbook.com/profiles/company/1367194-78"><b>PitchBook</b><span>Funding data</span></a>
   </div>
 
-  <h3>Aster AI (AI × BNB Chain)</h3>
+  <h3 id="c-aster"><span class="st deliv">DELIVERED</span>Aster AI (AI × BNB Chain)</h3>
   <ul>
     <li>Grew <a href="https://x.com/asteraixyz">@asteraixyz</a> to a <b>50K-follower peak</b> with viral, KOL-led campaigns</li>
     <li>Connected the team with BNB Chain: selected as 1 of 11 Tier 4 projects in the <a href="https://www.bnbchain.org/en/blog/congratulations-to-the-latest-bnb-ai-hack-winners-april-28-batch">BNB AI Hack, 28 Apr 2025 batch</a></li>
@@ -309,13 +338,13 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:v
     <figure><img src="img/aster_bnb_ai_hack.jpg" alt="BNB AI Hack winners graphic listing Aster AI in Tier 4 (Potential Award)" loading="lazy"><figcaption>BNB AI Hack: Aster AI selected for Tier 4 (Potential Award), 28 Apr 2025 (<a href="https://www.bnbchain.org/en/blog/congratulations-to-the-latest-bnb-ai-hack-winners-april-28-batch">BNB Chain blog</a>)</figcaption></figure>
     <figure><img src="img/aster_x.jpg" alt="Aster AI X profile showing 28.9K followers" loading="lazy"><figcaption>Aster AI on X today: 28.9K followers (peak 50K+ during the campaign)</figcaption></figure>
   </div>
-  <h3>Cryplex AI (AI × decentralized storage, Solana)</h3>
+  <h3 id="c-cryplex"><span class="st deliv">DELIVERED</span>Cryplex AI (AI × decentralized storage, Solana)</h3>
   <ul><li>X follower growth only, as the project's agency: grew <a href="https://x.com/CryplexAI">@CryplexAI</a>, a Solana project backed by HuntX Labs, from zero to <b>68.5K followers</b></li></ul>
   <div class="grid g2">
     <figure class="lean"><img src="img/cryplex_x.jpg" alt="Cryplex AI X profile showing 68.5K followers" loading="lazy"><figcaption>Cryplex AI on X: 0 → 68.5K followers</figcaption></figure>
   </div>
 
-  <h3>Paradex (Perp DEX on Starknet)</h3>
+  <h3 id="c-paradex"><span class="st deliv">DELIVERED</span>Paradex (Perp DEX on Starknet)</h3>
   <ul><li>Managed a Korean Telegram KOL campaign for Paradex's zero-fee perps, XP Warzone Season II and the Badger Brawl trading competition, ahead of the $DIME TGE (Sep 2025)</li></ul>
   <div class="label">Notable KOLs from the campaign</div>
   <div class="grid g4">
@@ -324,7 +353,7 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:v
     <figure class="tall"><img src="img/paradex_kol_ongsal.jpg" alt="Korean Telegram KOL post about Paradex zero fees and Badger Brawl" loading="lazy"><figcaption><a href="https://t.me/OngsalYee/1693">옹살랜드</a> · zero fees &amp; Badger Brawl</figcaption></figure>
   </div>
 
-  <h3>PredictX (prediction market)</h3>
+  <h3 id="c-predictx"><span class="st deliv">DELIVERED</span>PredictX (prediction market)</h3>
   <ul><li>3 TaskOn trading campaigns (<a href="https://taskon.xyz/quest/60099177">1</a>, <a href="https://taskon.xyz/quest/83152046">2</a>, <a href="https://taskon.xyz/quest/478276758">3</a>): 357 participants; <b>252 verified traders</b> each completed $1,000+ in volume, for <b>$250K+ prediction volume</b>, on a <b>$1,000</b> reward budget (about <b>$4 per verified trader</b>)</li></ul>
   <div class="grid g2">
     <figure><img src="img/predictx_q1.jpg" alt="PredictX TaskOn quest with 181 participants and 150 winners" loading="lazy"><figcaption>181 participants, 150 winners</figcaption></figure>
@@ -392,7 +421,7 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:v
   <h2>Builder &amp; AI</h2>
   <div class="recap" aria-label="Pay-Then-Act">
     <div>
-      <div class="label">Binance Agent OS Mini Hackathon · Track A · Top 100</div>
+      <div class="label"><span class="st built">BUILT</span>Binance Agent OS Mini Hackathon · Track A · Top 100</div>
       <div class="big" style="font-size:clamp(1.6rem,4.5vw,2.2rem)">Pay-Then-Act</div>
       <div style="color:var(--muted);font-size:.9rem">"An agent that only spends when it actually needs to." Coded solo. <a href="https://doctord0x.github.io/pay-then-act/">Product</a> · <a href="https://github.com/DoctorD0x/pay-then-act">GitHub</a> · <a href="https://x.com/0xPhD_/status/2097422535864578521">Video demo</a></div>
     </div>
