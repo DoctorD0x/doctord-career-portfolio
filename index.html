@@ -76,6 +76,10 @@ li b{font-variant-numeric:tabular-nums}
 .pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:10px;margin-top:12px}
 .pcard{display:flex;flex-direction:column;gap:6px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;color:inherit;text-decoration:none;min-width:0}
 .pcard:hover{border-color:var(--accent)}
+.aigrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:14px 0 22px}
+.aicard{display:flex;flex-direction:column;gap:6px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;min-width:0}
+@media (max-width:640px){.aigrid{grid-template-columns:1fr}}
+.aicard b{font-size:1rem}.aicard small{color:var(--muted);font-size:.86rem;line-height:1.45}
 .pcard b{font-size:1rem}.pcard small{color:var(--muted);font-size:.84rem;line-height:1.4}
 .legend{display:flex;flex-wrap:wrap;gap:6px 16px;color:var(--muted);font-size:.84rem;margin-top:6px}
 figure{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px;display:flex;flex-direction:column;gap:6px;min-width:0}
@@ -113,8 +117,8 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:v
 <header>
   <div class="label">Web3 growth portfolio · updated Nov 2026</div>
   <h1>Jakey Hwang (DoctorD)</h1>
-  <div class="role">Web3 Growth Marketer</div>
-  <p style="margin-top:10px">Web3 growth marketer. Early marketing hire at Bullbit, where I designed the points and community programs behind $424M+ in trading volume and helped take the product through its TGE and Layer 1 launch. Before that, agency work on X growth, KOL campaigns and PR, with a 500+ KOL network across Korea, Russia/CIS and Southeast Asia.</p>
+  <div class="role">Web3 Growth Marketer · builds own AI agents &amp; growth tools</div>
+  <p style="margin-top:10px">Web3 growth marketer. Early marketing hire at Bullbit, where I designed the points and community programs behind $424M+ in trading volume and helped take the product through its TGE and Layer 1 launch. Before that, agency work on X growth, KOL campaigns and PR, with a 500+ KOL network across Korea, Russia/CIS and Southeast Asia. I also build my own tools: AI agents for KOL discovery, campaign research and funnel tracking, and an AI trading agent that made Top 100 at Binance's Agent OS hackathon.</p>
   <div class="contacts">
     <span>finnhuman.business@gmail.com</span>
     <span>Telegram @DoctorD_OG</span>
@@ -126,13 +130,14 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:v
 </header>
 
 <div class="glance" aria-label="Results at a glance">
-  <div class="stat"><b>$424M+</b><span>trading volume from a points program I designed</span><a href="https://x.com/BullbitDEXHQ/status/2062731352047292655">Genesis recap</a></div>
+  <div class="stat"><b>$424.8M</b><span>real user trading volume from a points program I designed</span><a href="https://x.com/BullbitDEXHQ/status/2062731352047292655">Genesis recap</a></div>
   <div class="stat"><b>$48.5B</b><span>L1 testnet volume · 45M transactions · ~22K wallets on a $2.5K budget (~$0.11 per wallet)</span><a href="https://bullbit.ai/blog/en/bullchain-testnet-weekly-recap-week-6">Week 6 recap</a></div>
   <div class="stat"><b>BingX + LBank</b><span>$BUBI token listing · 4,228 TGE quest participants</span><a href="https://x.com/BullbitDEXHQ/status/2069359849310433335">Listing post</a></div>
   <div class="stat"><b>950+</b><span>media sites covered the $BUBI launch, incl. Cointelegraph, AP News, Business Insider</span><a href="#bullbit">Press</a></div>
   <div class="stat"><b>140K+</b><span>X followers grown across many projects, incl. Cryplex AI 68.5K · Aster AI 50K peak · Bullbit 22.2K</span><a href="#scalpel">Screenshots</a></div>
   <div class="stat"><b>$4M+</b><span>NFT sales from KOL-led growth for two NFT gaming clients</span><a href="#synergy">Synergy Labs</a></div>
   <div class="stat"><b>500+</b><span>KOLs managed across Korea, Russia/CIS and SEA</span><a href="#synergy">Synergy Labs</a></div>
+  <div class="stat"><b>AI-native</b><span>my own Claude agents for KOL discovery, campaign research and funnel tracking</span><a href="#builder">AI tools</a></div>
   <div class="stat"><b>Top 100</b><span>Binance Agent OS Mini Hackathon, AI trading agent coded solo</span><a href="#builder">Pay-Then-Act</a></div>
   <div class="stat"><b>Top 5</b><span>The Open Hack 2025 by TON, finals at India Blockchain Week</span><a href="#builder">Telegram Mini App</a></div>
 </div>
@@ -152,13 +157,14 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:v
     <a class="pcard" href="#c-cryplex"><span><span class="st deliv">DELIVERED</span></span><b>Cryplex AI X growth</b><small>Scalpel Labs · 0 → 68.5K followers</small></a>
     <a class="pcard" href="#c-predictx"><span><span class="st deliv">DELIVERED</span></span><b>PredictX trading campaigns</b><small>Scalpel Labs · 252 verified traders, ~$4 each</small></a>
     <a class="pcard" href="#synergy"><span><span class="st deliv">DELIVERED</span></span><b>NFT gaming growth & Matr1x KOLs</b><small>Synergy Labs · 2 games at $2M+ NFT sales each, 500+ KOLs</small></a>
+    <a class="pcard" href="#ai-tools"><span><span class="st built">BUILT</span></span><b>Growth agents &amp; automation</b><small>Coded myself · KOL discovery, campaign research, funnel tracking, X quests</small></a>
     <a class="pcard" href="#builder"><span><span class="st built">BUILT</span></span><b>Pay-Then-Act AI trading agent</b><small>Coded solo · Top 100, Binance Agent OS Mini Hackathon</small></a>
     <a class="pcard" href="#builder"><span><span class="st built">BUILT</span></span><b>Telegram Mini App game on TON</b><small>Team of 4 · Top 5, The Open Hack 2025</small></a>
   </div>
 </section>
 
 <nav class="toc" aria-label="Sections">
-  <a href="#programs">Programs</a><a href="#bullbit">Bullbit</a><a href="#scalpel">Scalpel Labs</a><a href="#synergy">Synergy Labs</a><a href="#binance">Binance</a><a href="#sandbox">The Sandbox</a><a href="#builder">Builder &amp; AI</a><a href="#earlier">Communities</a><a href="#coverage">Korean coverage</a>
+  <a href="#programs">Programs</a><a href="#bullbit">Bullbit</a><a href="#scalpel">Scalpel Labs</a><a href="#synergy">Synergy Labs</a><a href="#binance">Binance</a><a href="#sandbox">The Sandbox</a><a href="#builder">AI &amp; tools</a><a href="#earlier">Communities</a><a href="#coverage">Korean coverage</a>
 </nav>
 
 <section id="bullbit">
@@ -418,7 +424,14 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:v
 </section>
 
 <section id="builder">
-  <h2>Builder &amp; AI</h2>
+  <h2>AI tools, agents &amp; builds</h2>
+  <p style="max-width:68ch">I don't wait for a tool to exist. When a campaign needs something, I build it, usually with Claude. These are the agents and tools I use in my own growth work, followed by the products I've shipped at hackathons.</p>
+  <div class="aigrid" id="ai-tools">
+    <div class="aicard"><span><span class="st built">BUILT</span></span><b>KOL discovery agent</b><small>Finds and shortlists KOLs by market, niche and real engagement, using Kaito and Moni data through their APIs, so outreach starts from a ranked list instead of a guess.</small></div>
+    <div class="aicard"><span><span class="st built">BUILT</span></span><b>Campaign research agent</b><small>Researches competitor campaigns, narratives and reward designs before I plan one, and drafts the brief I then edit.</small></div>
+    <div class="aicard"><span><span class="st built">BUILT</span></span><b>Traffic &amp; funnel tracking</b><small>My own trackers for traffic and funnels on my own parameters: from post and KOL to visit, wallet, trade. Campaigns are judged on users and volume.</small></div>
+    <div class="aicard"><span><span class="st built">BUILT</span></span><b>Self-hosted X quests</b><small>Quest campaigns run on X or the project's own platform, with TaskOn only to bootstrap and a Grok bot for fast research.</small></div>
+  </div>
   <div class="recap" aria-label="Pay-Then-Act">
     <div>
       <div class="label"><span class="st built">BUILT</span>Binance Agent OS Mini Hackathon · Track A · Top 100</div>
@@ -445,9 +458,6 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:v
     <figure><img src="img/openhack_winners.jpg" alt="The Open Hack by TON winners slide, 5th to 10th place, including Dick Duck" loading="lazy"><figcaption>The Open Hack 2025 by TON: winners announcement (<a href="https://x.com/TONSSEA/status/1998393954103165309">post</a>)</figcaption></figure>
     <figure class="tall"><img src="img/dickduck_app.jpg" alt="Telegram Mini App game home screen" loading="lazy"><figcaption>The Telegram Mini App game (<a href="https://t.me/DickDuckRealBot">open in Telegram</a>)</figcaption></figure>
   </div>
-  <ul>
-    <li><b>My own growth tooling.</b> I code my own AI agents with Claude to find KOLs, research campaigns and track traffic and funnels on my own parameters, and pull data from Kaito and Moni through their APIs. Grok Bot for fast research. For quests, I prefer self-hosted campaigns on X or the project's own platform, with TaskOn to bootstrap.</li>
-  </ul>
 </section>
 
 <section id="earlier">
